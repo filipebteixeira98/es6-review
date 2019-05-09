@@ -1,2 +1,2 @@
 # es6-review
-Rocketseat's ES6 starter course
+Learning about new Javascript resources
