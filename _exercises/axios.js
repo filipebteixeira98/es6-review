@@ -3,11 +3,11 @@ import axios from 'axios'
 class Api {
   static async getUserInfo(username) {
     try {
-      const response = await axios.get(`https://api.github.com/users/${username}`);
+      const userInfo = await axios.get(`https://api.github.com/users/${username}`);
 
-      console.log(response);
-    } catch(err) {
-      console.warn(err);
+      console.log(userInfo.data);
+    } catch(error) {
+      console.warn(error);
     }
   }
 }
